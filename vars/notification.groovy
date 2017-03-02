@@ -13,5 +13,5 @@ def call(String buildStatus = 'STARTED') {
   	} else {
     	color = '#FF0000'
  	 }
-  	slackSend(color: color, message: "Job ${env.JOB_NAME} ${buildStatus}"
+  	slackSend(color: color, message: "Job ${env.JOB_NAME} ${buildStatus}")
 }
